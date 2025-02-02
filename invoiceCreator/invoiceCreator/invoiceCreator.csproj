@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="images\**" />
+    <EmbeddedResource Remove="images\**" />
+    <None Remove="images\**" />
+    <Page Remove="images\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Image\electric_text_colored.png" />
+    <None Remove="Image\selectioncolors.png" />
+    <None Remove="Image\spa.png" />
+    <None Remove="Image\spaShadow.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="iTextSharp" Version="5.5.13.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Image\electric_text_colored.png" />
+    <Resource Include="Image\selectioncolors.png" />
+    <Resource Include="Image\spa.png" />
+    <Resource Include="Image\spaShadow.png" />
+  </ItemGroup>
+
+</Project>
